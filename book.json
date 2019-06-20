@@ -1,0 +1,12 @@
+{
+    "plugins": ["advanced-emoji", "prism", "-highlight"],
+    "pluginsConfig":
+    {
+        "prism":
+        {
+            "css": [
+                "prismjs/themes/prism-tomorrow.css"
+            ]
+        }
+    }
+}
