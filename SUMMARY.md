@@ -1,11 +1,12 @@
 # Summary
 
 * [1.Javascript](README.md)
-  * [1-1.Array](array.md)
-  * [1-2.Iterators](iterators.md)
-  * [1-3.Ternary Operator](ternary_operator.md)
-  * [1-4.Objects](objects.md)
-  * [1-5.Promise Object](promise-object.md)
+  * [Function基本函式](function-base.md)
+  * [Array](array.md)
+  * [Iterators](iterators.md)
+  * [Ternary Operator](ternary_operator.md)
+  * [Objects](objects.md)
+  * [Promise Object](promise-object.md)
 * [2.Sass](sass.md)
   * [2-1.String Interpolation](string-interpolation.md)
   * [2-2.Sassy Parallax Banner](sassy-parallax-banner.md)

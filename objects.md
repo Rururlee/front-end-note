@@ -1,6 +1,6 @@
 #Objects
 
-<!-- - [ ] checklist
+<!-- - [ ] checklist 這是checkbox
 - [x] checklist -->
 
 :penguin:**初階物件**<br>
