@@ -12,4 +12,4 @@
   * [Each Loops/For Loops](each-loops.md)
   * [Sass Bar Chart](bar-chart.md)
 * [3.Other](other.md)
-
+* [小遊戲分享機制](小遊戲分享機制.md)
