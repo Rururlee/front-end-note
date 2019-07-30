@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Objects · GitBook</title>
+        <title>1-4.Objects · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -112,7 +112,7 @@
                 <a href="array.html">
             
                     
-                    Array
+                    1-1.Array
             
                 </a>
             
@@ -125,7 +125,7 @@
                 <a href="iterators.html">
             
                     
-                    Iterators
+                    1-2.Iterators
             
                 </a>
             
@@ -138,7 +138,7 @@
                 <a href="ternary_operator.html">
             
                     
-                    Ternary Operator
+                    1-3.Ternary Operator
             
                 </a>
             
@@ -151,7 +151,7 @@
                 <a href="objects.html">
             
                     
-                    Objects
+                    1-4.Objects
             
                 </a>
             
@@ -164,7 +164,7 @@
                 <a href="promise-object.html">
             
                     
-                    Promise Object
+                    1-5.Promise Object
             
                 </a>
             
@@ -196,7 +196,7 @@
                 <a href="string-interpolation.html">
             
                     
-                    String Interpolation
+                    2-1.String Interpolation
             
                 </a>
             
@@ -209,7 +209,7 @@
                 <a href="sassy-parallax-banner.html">
             
                     
-                    Sassy Parallax Banner
+                    2-2.Sassy Parallax Banner
             
                 </a>
             
@@ -222,7 +222,7 @@
                 <a href="each-loops.html">
             
                     
-                    Each Loops/For Loops
+                    2-3.Each Loops/For Loops
             
                 </a>
             
@@ -235,7 +235,7 @@
                 <a href="bar-chart.html">
             
                     
-                    Sass Bar Chart
+                    2-4.Sass Bar Chart
             
                 </a>
             
@@ -304,7 +304,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Objects</a>
+        <a href="." >1-4.Objects</a>
     </h1>
 </div>
 
@@ -320,6 +320,69 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="objects">Objects</h1>
+<!-- - [ ] checklist
+- [x] checklist -->
+<p><img align="absmiddle" alt=":penguin:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/penguin.png" title=":penguin:"><strong>&#x521D;&#x968E;&#x7269;&#x4EF6;</strong><br></p>
+<ul>
+<li><p>&#x7BC4;&#x4F8B;&#x4E00;</p>
+<pre class="language-"><code class="lang-js">  <span class="token comment">//&#x5EFA;&#x7ACB;&#x7A7A;&#x767D;&#x7269;&#x4EF6;</span>
+  <span class="token keyword">var</span> point <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">//&#x5EFA;&#x7ACB;&#x7269;&#x4EF6;&#x7684;&#x6210;&#x54E1;</span>
+  point<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+  point<span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+  point<span class="token punctuation">.</span><span class="token function-variable function">getPosition</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">//&#x5C07;&#x4E00;&#x500B;&#x51FD;&#x5F0F;&#x4EE3;&#x5165;getPosition</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">+</span> <span class="token string">&apos;,&apos;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//this&#x6307;&#x5411;point   </span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  point<span class="token punctuation">.</span><span class="token function">getPosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//print 3,4</span>
+</code></pre>
+</li>
+<li><p>&#x7BC4;&#x4F8B;&#x4E8C;</p>
+<pre class="language-"><code class="lang-js">  <span class="token comment">//&#x8A2D;&#x8A08;&#x4E00;&#x500B;&#x904A;&#x6232;&#x89D2;&#x8272;&#x7269;&#x4EF6;</span>
+  <span class="token keyword">var</span> player2<span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  player2<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&apos;sasuke&apos;</span><span class="token punctuation">;</span>
+  player2<span class="token punctuation">.</span>hp <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+  player2<span class="token punctuation">.</span><span class="token function-variable function">fight</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+    <span class="token keyword">this</span><span class="token punctuation">.</span>hp<span class="token operator">=</span><span class="token keyword">this</span><span class="token punctuation">.</span>hp<span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  player2<span class="token punctuation">.</span><span class="token function-variable function">rest</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>hp<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  player2<span class="token punctuation">.</span><span class="token function-variable function">report</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">&apos;:&apos;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>hp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  player2<span class="token punctuation">.</span><span class="token function">fight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//&#x6253;&#x4E00;&#x67B6;&#x6263;&#x5169;&#x6EF4;</span>
+  player2<span class="token punctuation">.</span><span class="token function">rest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//&#x4F11;&#x606F;&#x56DE;&#x4E00;&#x6EF4;</span>
+  player2<span class="token punctuation">.</span><span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//&#x56DE;&#x5831;&#x89D2;&#x8272;&#x8840;&#x91CF;</span>
+  <span class="token comment">//print sasuke:99</span>
+</code></pre>
+</li>
+<li><p>&#x7BC4;&#x4F8B;&#x4E09;</p>
+<pre class="language-"><code class="lang-js">  <span class="token comment">//&#x5EFA;&#x69CB;&#x7269;&#x4EF6;&#x7684;&#x51FD;&#x5F0F;</span>
+  <span class="token keyword">function</span> <span class="token function">Player</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span>hp</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">//&#x53C3;&#x6578;&#x5C0D;&#x5230;this.name(hp)&#x5F8C;&#x7684;name&#x3001;hp</span>
+    <span class="token comment">//this&#x4EE3;&#x8868;&#x65B0;&#x5EFA;&#x7684;&#x7A7A;&#x767D;&#x7269;&#x4EF6;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>hp <span class="token operator">=</span> hp<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">fight</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>hp<span class="token operator">-=</span><span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">rest</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>hp<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">report</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">+</span> <span class="token string">&apos;:&apos;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>hp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token comment">//&#x81EA;&#x52D5;&#x56DE;&#x50B3;&#xFF0C;&#x4E0D;&#x7528;&#x5BEB;return</span>
+
+  <span class="token comment">//&#x547C;&#x53EB;&#x5EFA;&#x69CB;&#x5F0F;(&#x5EFA;&#x69CB;&#x5F0F;&#x6703;&#x5EFA;&#x7ACB;&#x7269;&#x4EF6;&#x4E26;&#x56DE;&#x50B3;&#xFF0C;&#x5B58;&#x653E;&#x5728;&#x8B8A;&#x6578;player_1)</span>
+  <span class="token keyword">var</span> player_1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Player</span><span class="token punctuation">(</span><span class="token string">&apos;john&apos;</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  player_1<span class="token punctuation">.</span><span class="token function">fight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  player_1<span class="token punctuation">.</span><span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//print john:98</span>
+  <span class="token keyword">var</span> player_2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Player</span><span class="token punctuation">(</span><span class="token string">&apos;mary&apos;</span><span class="token punctuation">,</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  player_2<span class="token punctuation">.</span><span class="token function">rest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    
+  player_2<span class="token punctuation">.</span><span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//print mary:81</span>
+</code></pre>
+</li>
+</ul>
 <p><img align="absmiddle" alt=":penguin:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/penguin.png" title=":penguin:">const&#x8B8A;&#x6578;&#xFF0C;&#x503C;&#x4E5F;&#x6703;&#x6539;&#x8B8A;(&#x56E0;&#x70BA;&#x4E0D;&#x662F;&#x91CD;&#x65B0;&#x5BA3;&#x544A;)<br>
 <img align="absmiddle" alt=":penguin:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/penguin.png" title=":penguin:">&#x5E95;&#x7DDA;&#x547D;&#x540D;&#x7684;&#x8B8A;&#x6578;&#x4E0D;&#x8981;&#x6539;&#x8B8A;&#x503C;</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">const</span> spaceship <span class="token operator">=</span> <span class="token punctuation">{</span>
@@ -558,12 +621,12 @@ console<span class="token punctuation">.</span><span class="token function">log<
 
             
                 
-                <a href="ternary_operator.html" class="navigation navigation-prev " aria-label="Previous page: Ternary Operator">
+                <a href="ternary_operator.html" class="navigation navigation-prev " aria-label="Previous page: 1-3.Ternary Operator">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="promise-object.html" class="navigation navigation-next " aria-label="Next page: Promise Object">
+                <a href="promise-object.html" class="navigation navigation-next " aria-label="Next page: 1-5.Promise Object">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -574,7 +637,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Objects","level":"1.1.4","depth":2,"next":{"title":"Promise Object","level":"1.1.5","depth":2,"path":"promise-object.md","ref":"promise-object.md","articles":[]},"previous":{"title":"Ternary Operator","level":"1.1.3","depth":2,"path":"ternary_operator.md","ref":"ternary_operator.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["advanced-emoji","prism","-highlight","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"advanced-emoji":{"embedEmojis":false},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"objects.md","mtime":"2019-04-11T03:48:52.901Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-25T02:42:00.074Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1-4.Objects","level":"1.1.4","depth":2,"next":{"title":"1-5.Promise Object","level":"1.1.5","depth":2,"path":"promise-object.md","ref":"promise-object.md","articles":[]},"previous":{"title":"1-3.Ternary Operator","level":"1.1.3","depth":2,"path":"ternary_operator.md","ref":"ternary_operator.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["advanced-emoji","prism","-highlight","todo","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"livereload":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"objects.md","mtime":"2019-07-30T10:12:07.965Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-30T09:20:27.072Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

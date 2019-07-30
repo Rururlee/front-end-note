@@ -1,5 +1,5 @@
 {
-    "plugins": ["advanced-emoji", "prism", "-highlight"],
+    "plugins": ["advanced-emoji", "prism", "-highlight","todo"],
     "pluginsConfig":
     {
         "prism":

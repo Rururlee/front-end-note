@@ -1,5 +1,70 @@
 #Objects
 
+<!-- - [ ] checklist
+- [x] checklist -->
+
+:penguin:**初階物件**<br>
+* 範例一
+```js
+    //建立空白物件
+    var point = new Object();
+    //建立物件的成員
+    point.x = 3;
+    point.y = 4;
+    point.getPosition = function(){ //將一個函式代入getPosition
+      console.log(this.x + ',' + this.y); //this指向point   
+    };
+    point.getPosition(); //print 3,4
+```
+
+* 範例二
+```js
+    //設計一個遊戲角色物件
+    var player2= new Object();
+    player2.name = 'sasuke';
+    player2.hp = 100;
+    player2.fight = function(){ 
+      this.hp=this.hp-2;
+    };
+    player2.rest = function(){
+      this.hp++;
+    };
+    player2.report = function(){
+      console.log(this.name + ':' + this.hp);
+    };
+    player2.fight(); //打一架扣兩滴
+    player2.rest(); //休息回一滴
+    player2.report(); //回報角色血量
+    //print sasuke:99
+```
+
+* 範例三
+```js
+    //建構物件的函式
+    function Player(name,hp){ //參數對到this.name(hp)後的name、hp
+      //this代表新建的空白物件
+      this.name = name;
+      this.hp = hp;
+      this.fight = function(){
+        this.hp-=2;
+      };
+      this.rest = function(){
+        this.hp++;
+      };
+      this.report = function(){
+        console.log(this.name + ':' + this.hp);
+      }
+    }//自動回傳，不用寫return
+
+    //呼叫建構式(建構式會建立物件並回傳，存放在變數player_1)
+    var player_1 = new Player('john',100);
+    player_1.fight();
+    player_1.report(); //print john:98
+    var player_2 = new Player('mary',80);
+    player_2.rest();    
+    player_2.report(); //print mary:81 
+```
+
 :penguin:const變數，值也會改變(因為不是重新宣告)<br>
 :penguin:底線命名的變數不要改變值
 ```js
