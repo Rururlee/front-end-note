@@ -7,6 +7,7 @@
   * [Ternary Operator](ternary_operator.md)
   * [Objects](objects.md)
   * [Promise Object](promise-object.md)
+  * [JSON串接/api](JSON.md)
 * [2.Sass](sass.md)
   * [2-1.String Interpolation](string-interpolation.md)
   * [2-2.Sassy Parallax Banner](sassy-parallax-banner.md)

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Ternary Operator · GitBook</title>
+        <title>JSON串接/api · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="objects.html" />
+    <link rel="next" href="sass.html" />
     
     
-    <link rel="prev" href="iterators.html" />
+    <link rel="prev" href="promise-object.html" />
     
 
     </head>
@@ -146,7 +146,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.1.4" data-path="ternary_operator.html">
+        <li class="chapter " data-level="1.1.4" data-path="ternary_operator.html">
             
                 <a href="ternary_operator.html">
             
@@ -185,7 +185,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.7" data-path="JSON.html">
+        <li class="chapter active" data-level="1.1.7" data-path="JSON.html">
             
                 <a href="JSON.html">
             
@@ -330,7 +330,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Ternary Operator</a>
+        <a href="." >JSON串接/api</a>
     </h1>
 </div>
 
@@ -345,18 +345,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ternary-operator">Ternary Operator</h1>
-<p>&#x4E09;&#x5143;&#x904B;&#x7B97;</p>
-<pre class="language-"><code class="lang-js"><span class="token keyword">let</span> favoritePhrase <span class="token operator">=</span> <span class="token string">&apos;Love That!&apos;</span><span class="token punctuation">;</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>favoritePhrase <span class="token operator">===</span> <span class="token string">&apos;Love That!&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;I love that!&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;I don&apos;t love that!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+                                <h1 id="json">JSON</h1>
+<p><img align="absmiddle" alt=":pushpin:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/pushpin.png" title=":pushpin:">JSON: Javascript Object Notation(Javascript &#x7269;&#x4EF6;&#x8868;&#x793A;&#x8868;)<br>
+<img align="absmiddle" alt=":pushpin:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/pushpin.png" title=":pushpin:">&#x4F7F;&#x7528;JSON.stringify(&#x7269;&#x4EF6;);&#x5C07;&#x7269;&#x4EF6;&#x8F49;&#x63DB;&#x6210;JSON&#x683C;&#x5F0F;&#x7684;&#x5B57;&#x4E32;&#xFF0C;&#x4F46;&#x6703;&#x5FFD;&#x7565;&#x51FD;&#x5F0F;&#x7684;&#x90E8;&#x5206;<br>
+<img align="absmiddle" alt=":pushpin:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/pushpin.png" title=":pushpin:">&#x4F7F;&#x7528;JSON.parse(JSON&#x683C;&#x5F0F;&#x5B57;&#x4E32;);&#x5C07;&#x5B57;&#x4E32;&#x8F49;&#x63DB;&#x6210;&#x7269;&#x4EF6;&#x7D50;&#x69CB;<br></p>
+<h4 id="1&#x3001;json&#x6A94;&#x6848;&#x7528;&#x96D9;&#x5F15;&#x865F;">1&#x3001;JSON&#x6A94;&#x6848;&#x7528;&#x96D9;&#x5F15;&#x865F;</h4>
+<h4 id="2&#x3001;&#x8CC7;&#x6599;&#x591A;&#x7684;&#x7528;json&#x6A94;">2&#x3001;&#x8CC7;&#x6599;&#x591A;&#x7684;&#x7528;JSON&#x6A94;</h4>
+<pre class="language-"><code class="lang-js">
 
-<span class="token comment">//Ternary Operator&#x5F8C;</span>
-favoritePhrase <span class="token operator">===</span> <span class="token string">&apos;Love That!&apos;</span> <span class="token operator">?</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;I love that!&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> 
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;I don&apos;t love that!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 
                                 
@@ -385,12 +381,12 @@ console<span class="token punctuation">.</span><span class="token function">log<
 
             
                 
-                <a href="iterators.html" class="navigation navigation-prev " aria-label="Previous page: Iterators">
+                <a href="promise-object.html" class="navigation navigation-prev " aria-label="Previous page: Promise Object">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="objects.html" class="navigation navigation-next " aria-label="Next page: Objects">
+                <a href="sass.html" class="navigation navigation-next " aria-label="Next page: 2.Sass">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -401,7 +397,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Ternary Operator","level":"1.1.4","depth":2,"next":{"title":"Objects","level":"1.1.5","depth":2,"path":"objects.md","ref":"objects.md","articles":[]},"previous":{"title":"Iterators","level":"1.1.3","depth":2,"path":"iterators.md","ref":"iterators.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["advanced-emoji","prism","-highlight","todo","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"livereload":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ternary_operator.md","mtime":"2019-04-01T03:09:31.393Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-08T08:43:32.273Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JSON串接/api","level":"1.1.7","depth":2,"next":{"title":"2.Sass","level":"1.2","depth":1,"path":"sass.md","ref":"sass.md","articles":[{"title":"2-1.String Interpolation","level":"1.2.1","depth":2,"path":"string-interpolation.md","ref":"string-interpolation.md","articles":[]},{"title":"2-2.Sassy Parallax Banner","level":"1.2.2","depth":2,"path":"sassy-parallax-banner.md","ref":"sassy-parallax-banner.md","articles":[]},{"title":"2-3.Each Loops/For Loops","level":"1.2.3","depth":2,"path":"each-loops.md","ref":"each-loops.md","articles":[]},{"title":"2-4.Sass Bar Chart","level":"1.2.4","depth":2,"path":"bar-chart.md","ref":"bar-chart.md","articles":[]}]},"previous":{"title":"Promise Object","level":"1.1.6","depth":2,"path":"promise-object.md","ref":"promise-object.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["advanced-emoji","prism","-highlight","todo","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"livereload":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"JSON.md","mtime":"2019-08-10T07:32:01.380Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-08T08:43:32.273Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
