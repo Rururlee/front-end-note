@@ -425,8 +425,8 @@
 <p><img align="absmiddle" alt=":penguin:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/penguin.png" title=":penguin:">const&#x8B8A;&#x6578;&#xFF0C;&#x503C;&#x4E5F;&#x6703;&#x6539;&#x8B8A;(&#x56E0;&#x70BA;&#x4E0D;&#x662F;&#x91CD;&#x65B0;&#x5BA3;&#x544A;)<br>
 <img align="absmiddle" alt=":penguin:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/penguin.png" title=":penguin:">&#x5E95;&#x7DDA;&#x547D;&#x540D;&#x7684;&#x8B8A;&#x6578;&#x4E0D;&#x8981;&#x6539;&#x8B8A;&#x503C;</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">const</span> spaceship <span class="token operator">=</span> <span class="token punctuation">{</span>
-  homePlanet <span class="token punctuation">:</span> <span class="token string">&apos;Earth&apos;</span><span class="token punctuation">,</span>
-  color <span class="token punctuation">:</span> <span class="token string">&apos;silver&apos;</span>
+  homePlanet <span class="token operator">:</span> <span class="token string">&apos;Earth&apos;</span><span class="token punctuation">,</span>
+  color <span class="token operator">:</span> <span class="token string">&apos;silver&apos;</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
 <span class="token keyword">let</span> <span class="token function-variable function">paintIt</span> <span class="token operator">=</span> <span class="token parameter">obj</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
@@ -438,8 +438,8 @@
 spaceship<span class="token punctuation">.</span>color <span class="token comment">// Returns &apos;glorious gold&apos;</span>
 </code></pre>
 <pre class="language-"><code class="lang-js"><span class="token keyword">let</span> spaceship <span class="token operator">=</span> <span class="token punctuation">{</span>
-  <span class="token string">&apos;Fuel Type&apos;</span> <span class="token punctuation">:</span> <span class="token string">&apos;Turbo Fuel&apos;</span><span class="token punctuation">,</span>
-  homePlanet <span class="token punctuation">:</span> <span class="token string">&apos;Earth&apos;</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;Fuel Type&apos;</span> <span class="token operator">:</span> <span class="token string">&apos;Turbo Fuel&apos;</span><span class="token punctuation">,</span>
+  homePlanet <span class="token operator">:</span> <span class="token string">&apos;Earth&apos;</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
 <span class="token comment">// Write your code below</span>
@@ -457,11 +457,11 @@ console<span class="token punctuation">.</span><span class="token function">log<
 </code></pre>
 <p><img align="absmiddle" alt=":blossom:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/blossom.png" title=":blossom:">Arrow Functions and this &#x7BAD;&#x982D;&#x51FD;&#x5F0F;&#x8207;this</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">const</span> goat <span class="token operator">=</span> <span class="token punctuation">{</span>
-  dietType<span class="token punctuation">:</span> <span class="token string">&apos;herbivore&apos;</span><span class="token punctuation">,</span>
+  dietType<span class="token operator">:</span> <span class="token string">&apos;herbivore&apos;</span><span class="token punctuation">,</span>
   <span class="token function">makeSound</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;baaa&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
   <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token comment">//&#x6B64;&#x65B9;&#x6CD5;&#x51FD;&#x5F0F;&#x82E5;&#x6709;this&#x662F;&#x6307;&#x5411;&#x6700;&#x5916;&#x5C64;&#x7684;goat</span>
-  <span class="token function-variable function">diet</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> 
+  <span class="token function-variable function">diet</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> 
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>dietType<span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span class="token comment">//&#x7BAD;&#x982D;&#x51FD;&#x5F0F;&#x88E1;&#x7684;this&#x6307;&#x5411;&#x672C;&#x8EAB;function diet</span>
@@ -472,15 +472,15 @@ goat<span class="token punctuation">.</span><span class="token function">diet</s
 <p><img align="absmiddle" alt=":blossom:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/blossom.png" title=":blossom:">Getters<br>
 -- typeof&#x8F38;&#x51FA;&#x986F;&#x793A;&#x65B9;&#x5F0F;&#x662F;&#x5B57;&#x4E32;&#xFF0C;&#x6240;&#x4EE5;&#x689D;&#x4EF6;&#x8A2D;&#x5B57;&#x4E32;&apos;number&apos;<br></p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">const</span> robot <span class="token operator">=</span> <span class="token punctuation">{</span>
-  _model<span class="token punctuation">:</span> <span class="token string">&apos;1E78V2&apos;</span><span class="token punctuation">,</span>
-  _energyLevel<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+  _model<span class="token operator">:</span> <span class="token string">&apos;1E78V2&apos;</span><span class="token punctuation">,</span>
+  _energyLevel<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
   <span class="token keyword">get</span> <span class="token function">energyLevel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_energyLevel <span class="token operator">===</span> <span class="token string">&apos;number&apos;</span><span class="token punctuation">)</span>
     <span class="token punctuation">{</span>
-      <span class="token keyword">return</span> <span class="token template-string"><span class="token string">`My current energy level is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>_energyLevel<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">My current energy level is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>_energyLevel<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token keyword">else</span>
     <span class="token punctuation">{</span>
-      <span class="token keyword">return</span> <span class="token template-string"><span class="token string">`System malfunction: cannot retrieve energy level`</span></span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">System malfunction: cannot retrieve energy level</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span> 
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
@@ -490,7 +490,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <p><img align="absmiddle" alt=":blossom:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/blossom.png" title=":blossom:">getters<br>
 <img align="absmiddle" alt=":blossom:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/blossom.png" title=":blossom:">get&#x548C;&#x6C92;get function&#x7684;&#x5340;&#x5225;</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">let</span> dogs <span class="token operator">=</span> <span class="token punctuation">{</span>
-  _bark <span class="token punctuation">:</span> <span class="token string">&apos;Woo&apos;</span><span class="token punctuation">,</span>
+  _bark <span class="token operator">:</span> <span class="token string">&apos;Woo&apos;</span><span class="token punctuation">,</span>
   <span class="token keyword">get</span> <span class="token function">bark</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">//&#x53D6;&#x503C;</span>
     <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_bark<span class="token punctuation">;</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
@@ -504,10 +504,10 @@ dogs<span class="token punctuation">.</span><span class="token function">bark</s
 </code></pre>
 <pre class="language-"><code class="lang-js"><span class="token comment">//getters&#x7BC4;&#x4F8B;</span>
 <span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token punctuation">{</span>
-  _firstName<span class="token punctuation">:</span> <span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span>
-  _lastName<span class="token punctuation">:</span> <span class="token string">&apos;Doe&apos;</span><span class="token punctuation">,</span>
+  _firstName<span class="token operator">:</span> <span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span>
+  _lastName<span class="token operator">:</span> <span class="token string">&apos;Doe&apos;</span><span class="token punctuation">,</span>
   <span class="token keyword">get</span> <span class="token function">fullName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>_firstName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>_lastName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>_firstName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>_lastName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 person<span class="token punctuation">.</span>fullName<span class="token punctuation">;</span> <span class="token comment">//Log:John Doe</span>
@@ -515,7 +515,7 @@ person<span class="token punctuation">.</span>fullName<span class="token punctua
 <p><img align="absmiddle" alt=":blossom:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/blossom.png" title=":blossom:">setters<br>
 <img align="absmiddle" alt=":blossom:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/blossom.png" title=":blossom:">Java&#x7684;&#x6982;&#x5FF5;:&#x6709;&#x4E9B;&#x503C;&#x6703;&#x8A2D;&#x5B9A;&#x5916;&#x90E8;&#x4E0D;&#x80FD;&#x53D6;&#x503C;(&#x65B9;&#x4FBF;debug&#x6216;&#x9632;&#x6B62;&#x8986;&#x84CB;&#x8B8A;&#x6578;&#x7B49;...&#x6BD4;&#x8F03;&#x597D;&#x7DAD;&#x8B77;&#x539F;&#x56E0;)&#xFF0C;&#x5C31;&#x5FC5;&#x9808;&#x7528;get&#x548C;set&#x65B9;&#x5F0F;&#x53BB;&#x53D6;&#x503C;&#x517C;&#x4FEE;&#x6539;</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token punctuation">{</span>
-  _age<span class="token punctuation">:</span> <span class="token number">37</span><span class="token punctuation">,</span>
+  _age<span class="token operator">:</span> <span class="token number">37</span><span class="token punctuation">,</span>
   <span class="token keyword">set</span> <span class="token function">age</span><span class="token punctuation">(</span><span class="token parameter">newAge</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> newAge <span class="token operator">===</span> <span class="token string">&apos;number&apos;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
       <span class="token keyword">this</span><span class="token punctuation">.</span>_age <span class="token operator">=</span> newAge<span class="token punctuation">;</span>
@@ -545,8 +545,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <p><img align="absmiddle" alt=":blossom:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/blossom.png" title=":blossom:">Factory Functions</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">const</span> <span class="token function-variable function">robotFactory</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">model<span class="token punctuation">,</span>mobile</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
   <span class="token keyword">return</span> <span class="token punctuation">{</span>
-    model<span class="token punctuation">:</span> model<span class="token punctuation">,</span>
-    mobile<span class="token punctuation">:</span> mobile<span class="token punctuation">,</span>
+    model<span class="token operator">:</span> model<span class="token punctuation">,</span>
+    mobile<span class="token operator">:</span> mobile<span class="token punctuation">,</span>
     <span class="token function">beep</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
       console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;Beep Boop&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
@@ -561,8 +561,8 @@ tinCan<span class="token punctuation">.</span><span class="token function">beep<
 <p><img align="absmiddle" alt=":blossom:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/blossom.png" title=":blossom:">Property Value Shorthand</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">const</span> <span class="token function-variable function">monsterFactory</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> age</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
   <span class="token keyword">return</span> <span class="token punctuation">{</span> 
-    name<span class="token punctuation">:</span> name<span class="token punctuation">,</span>
-    age<span class="token punctuation">:</span> age
+    name<span class="token operator">:</span> name<span class="token punctuation">,</span>
+    age<span class="token operator">:</span> age
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
@@ -576,9 +576,9 @@ tinCan<span class="token punctuation">.</span><span class="token function">beep<
 </code></pre>
 <p><img align="absmiddle" alt=":blossom:" class="emoji" src="gitbook/gitbook-plugin-advanced-emoji/emojis/blossom.png" title=":blossom:">Destructured Assignment&#x7D50;&#x69CB;&#x8CE6;&#x503C;</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">const</span> robot <span class="token operator">=</span> <span class="token punctuation">{</span>
-  model<span class="token punctuation">:</span> <span class="token string">&apos;1E78V2&apos;</span><span class="token punctuation">,</span>
-  energyLevel<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
-  functionality<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  model<span class="token operator">:</span> <span class="token string">&apos;1E78V2&apos;</span><span class="token punctuation">,</span>
+  energyLevel<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+  functionality<span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token function">beep</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;Beep Boop&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
@@ -599,11 +599,11 @@ functionality<span class="token punctuation">.</span><span class="token function
 <br>
 (1)Object.keys():&#x53D6;&#x5F97;&#x7269;&#x4EF6;&#x7684;&#x9375;&#x503C;(key)&#xFF0C;&#x7D44;&#x6210;&#x9663;&#x5217;&#x5F8C;&#x56DE;&#x50B3;</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">const</span> robot <span class="token operator">=</span> <span class="token punctuation">{</span>
-  model<span class="token punctuation">:</span> <span class="token string">&apos;SAL-1000&apos;</span><span class="token punctuation">,</span>
-  mobile<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-  sentient<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-  armor<span class="token punctuation">:</span> <span class="token string">&apos;Steel-plated&apos;</span><span class="token punctuation">,</span>
-  energyLevel<span class="token punctuation">:</span> <span class="token number">75</span>
+  model<span class="token operator">:</span> <span class="token string">&apos;SAL-1000&apos;</span><span class="token punctuation">,</span>
+  mobile<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  sentient<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  armor<span class="token operator">:</span> <span class="token string">&apos;Steel-plated&apos;</span><span class="token punctuation">,</span>
+  energyLevel<span class="token operator">:</span> <span class="token number">75</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token comment">// What is missing in the following method call?</span>
 <span class="token keyword">const</span> robotKeys <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>robot<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -623,7 +623,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 </code></pre>
 <p>(3)Object.assign():&#x65B0;&#x589E;&#x5C6C;&#x6027;&#x8FD4;&#x56DE;&#x539F;&#x672C;&#x7684;&#x7269;&#x4EF6;</p>
 <pre class="language-"><code class="lang-js"><span class="token comment">// Declare newRobot below this line:</span>
-<span class="token keyword">const</span> newRobot <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token punctuation">{</span>laserBlaster<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> voiceRecognition<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">,</span>robot<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> newRobot <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token punctuation">{</span>laserBlaster<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> voiceRecognition<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">,</span>robot<span class="token punctuation">)</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newRobot<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment">/*Log:{laserBlaster:true,
   voiceRecognition:true,
@@ -676,7 +676,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Objects","level":"1.1.6","depth":2,"next":{"title":"Promise Object","level":"1.1.7","depth":2,"path":"promise-object.md","ref":"promise-object.md","articles":[]},"previous":{"title":"Ternary Operator","level":"1.1.5","depth":2,"path":"ternary_operator.md","ref":"ternary_operator.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["advanced-emoji","prism","-highlight","todo","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"livereload":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"objects.md","mtime":"2020-06-16T08:06:09.236Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-16T09:41:58.821Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Objects","level":"1.1.6","depth":2,"next":{"title":"Promise Object","level":"1.1.7","depth":2,"path":"promise-object.md","ref":"promise-object.md","articles":[]},"previous":{"title":"Ternary Operator","level":"1.1.5","depth":2,"path":"ternary_operator.md","ref":"ternary_operator.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["advanced-emoji","prism","-highlight","todo","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"livereload":{},"todo":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"objects.md","mtime":"2020-06-16T15:49:55.352Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-16T16:14:16.659Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
