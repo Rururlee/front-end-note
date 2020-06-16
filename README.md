@@ -1,6 +1,6 @@
 #js note
 
-
+#### javascript 因自由度很高，所以會有些雷點
 
 :fire:String Interpolation 字串插值(模板值)用法
 ```js
@@ -163,7 +163,7 @@ console.log(is2p2.name)
 ```
 gitbook serve跳掉解決方法
 
-1.gitbook serve
-2.delete _book folder once
+1.gitbook serve(本地啟動gitbook serve，並建立_book資料夾時)
+2.立即傷除_book目錄(會發現不會刪掉，command也繼續執行，那就時成功連接_book)
 3.now each time you change the md file, the server will stop and start over again and again
 ```
