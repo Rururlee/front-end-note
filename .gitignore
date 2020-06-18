@@ -1,6 +1,8 @@
 node_modules/
 jspm_packages/
-_book/
+
+# Book build output
+_book
 
 # Packages #
 ############
